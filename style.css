@@ -16,6 +16,7 @@
     --my_darkbrown: #5e4d53;
     --my_lightbrown: #8e7972;
     --my_pink: #d4adaa;
+    --my_darkpink: #b88a87;
     --my_transparent_pink: #d4adaa28;
     --my_beige: #d8ccb8;
 }
@@ -101,12 +102,16 @@ h2 {
     font-weight: 600;
     letter-spacing: 0.06rem;
     text-transform: uppercase;
-    transition: all .2s ease-in-out;
 }
 
 .container .nav_bar ul li a:hover {
     color: var(--my_pink);
-   
+}
+
+.container .nav_bar .nav_list .nav_item:hover {
+    color: var(--my_pink);
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
 }
 
 /* Hide elements meant to be displayed only on mobile screens. */
@@ -231,6 +236,10 @@ h2 {
     padding: 20px;
 }
 
+.education_content .education_box:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
 .education_content .education_box .edu_icon {
     width: 7rem;
     height: 7rem;
@@ -295,6 +304,11 @@ h2 {
     background-color: var(--my_pink);
 }
 
+.skills_content .box .percent div:hover {
+    background-color: var(--my_darkpink);
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
 /* --------------------------------- SEKCIA: PROJEKTY ------------------------------------ */
 .projects_content {
     width: 100%;
@@ -325,6 +339,8 @@ h2 {
 
 .projects_content .project_box .project_title:hover {
     color: var(--my_pink);
+    transform: scale(1.1);
+        transition: all 0.5s ease-in-out;
 }
 
 .projects_content .project_box .project_text {
@@ -345,6 +361,10 @@ h2 {
     width: 21rem;
 }
 
+.projects_content .project_box .project_img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
 /* --------------------------------- FOOTER ------------------------------------ */
 footer {
     width: 100%;
@@ -408,7 +428,6 @@ footer {
 
     .container .nav_bar .nav_list.active {
         right: 0;
-        z-index: 100;
     }
 
     .container .nav_bar .mobile_name {
@@ -419,10 +438,9 @@ footer {
         color: white;
     }
 
-    .container .nav_bar a {
-        text-decoration: none;
-    }
-
+                                .container .nav_bar a {
+                                    text-decoration: none;
+                                }
     .container .nav_bar .mobile_lines {
         display: block;
         float: right;
