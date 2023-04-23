@@ -1,3 +1,6 @@
+// Autor: Romana Ďuráčiová | xdurac01
+// Projekt: ITW Projekt č. 2
+
 const mobileLines = document.querySelector(".mobile_lines");
 const navList = document.querySelector(".nav_list");
 const navItem = document.querySelectorAll(".nav_item");
