@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Oswald:wght@200;300;400;500;600&display=swap" rel="stylesheet">
@@ -16,7 +17,11 @@
 
 <body>
     <div class="container">
+
+        <!-- Navigation bar -->
         <nav class="nav_bar">
+            
+            <!-- Div for navigation bar with profile picture in desktop view. -->
             <div class="image_box">
                 <a href="https://romanaduraciova.github.io/">
                     <img src="img/user_picture.png" alt="romana">
@@ -28,26 +33,41 @@
                 <li class="nav_item"><a href="#section_skills">Zručnosti</a></li>
                 <li class="nav_item"><a href="#section_projects">Projekty</a></li>
             </ul>
+
+            <!-- Navigation bar in mobile device view. -->
+            <!-- Name used as a hyperlink to online website. -->
             <a href="https://romanaduraciova.github.io/">
                 <div class="mobile_name">Romana Ďuráčiová</div>
             </a>
+            <!-- Div for "button" that shows navigation bar in mobile device view. -->
             <div class="mobile_lines">
                 <!-- Spans that will create three horizontal lines. -->
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
+
         </nav>
+        
+        <!-- Div for main content on the main (right) side of the webpage. -->
         <div class="right_bar">
+
+            <!-- Section for basic informations about a person. -->
             <section class="section" id="section_about">
+
                 <div class="about_content">
+                    <!-- Name used as a hyperlink to online website. -->
                     <a href="https://romanaduraciova.github.io/">
                         <h1 class="name">Romana <span class="surname">Ďuráčiová</span></h1>
                     </a>
+
+                    <!-- Subheading with basic informations about a person. -->
                     <div class="about_subheading">
                         Brno, Česká republika · 20 rokov · 
                         <a href="mailto:duraciovar@gmail.com">duraciovar@gmail.com</a>
                     </div>
+
+                    <!-- Paragraph with basic informations about a person. -->
                     <p class="about_text">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam in lorem sit amet leo 
                         accumsan lacinia. Fusce consectetuer risus a nunc. Nulla non arcu lacinia neque faucibus
@@ -56,6 +76,8 @@
                         pharetra vitae, orci. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus 
                         saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
                     </p>
+
+                    <!-- Div with social media icons including hyperlinks. -->
                     <div class="about_social">
                         <a class="social_icon" href="https://www.linkedin.com/" target="_blank">
                             <img src="img/linkedin.png" alt="linkedin">
@@ -67,11 +89,13 @@
                 </div>
             </section>
 
+            <!-- Section with education of a person. -->
             <section class="section" id="section_education">
                 <h1>Vzdelanie</h1>
+                <!-- Div with education boxes. One for each school. -->
                 <div class="education_content">
                     <div class="education_box">
-                        <img class="edu_icon" src="img/elementary.png" alt="linkedin">
+                        <img class="edu_icon" src="img/elementary.png" alt="elementary">
                         <div class="education_year">
                             2008 - 2017
                         </div>
@@ -81,7 +105,7 @@
                         </div>
                     </div>
                     <div class="education_box">
-                        <img class="edu_icon" src="img/high_school.png" alt="linkedin">
+                        <img class="edu_icon" src="img/high_school.png" alt="high_school">
                         <div class="education_year">
                             2017 - 2021
                         </div>
@@ -91,7 +115,7 @@
                         </div>
                     </div>
                     <div class="education_box">
-                        <img class="edu_icon" src="img/uni.png" alt="linkedin">
+                        <img class="edu_icon" src="img/uni.png" alt="university">
                         <div class="education_year">
                             2021 - sučasnosť
                         </div>
@@ -103,8 +127,10 @@
                 </div>
             </section>
 
+            <!-- Section with skills of a person. -->
             <section class="section" id="section_skills">
                 <h1>Zručnosti</h1>
+                <!-- Div with skills boxes. One for each skill. -->
                 <div class="skills_content">
                     <div class="box">
                         <h2>Html</h2>
@@ -139,11 +165,17 @@
                 </div>
             </section>
 
+            <!-- Section with projects of a person. -->
             <section class="section" id="section_projects">
                 <h1>Projekty</h1>
+
+                <!-- Div with projects boxes. One for each project. -->
                 <div class="projects_content">
+
+                    <!-- Mestsky Hostinec project -->
                     <div class="project_box">
                         <a href="https://www.mestskyhostinec.sk/">
+                             <!-- Custom image made by me with added screenshot of the real website. -->
                             <img class="project_img" id="hostinec_img" src="img/hostinec.png" alt="hostinec">
                         </a>
                         <div class="project_text">
@@ -157,8 +189,11 @@
                             </p>
                         </div>
                     </div>
+
+                    <!-- Raytex project -->
                     <div class="project_box">
                         <a href="https://www.raytex.sk/nase-produkty2/">
+                             <!-- Custom image made by me with added screenshot of the real website. -->
                             <img class="project_img" id="raytex_img" src="img/raytex.png" alt="raytex">
                         </a>
                         <div class="project_text">
@@ -185,6 +220,7 @@
 
     </div> <!-- container -->
 
+    <!-- Script for pop-up navigation menu in mobile device view. -->
     <script src="script.js"></script>
 </body>
 

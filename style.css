@@ -11,6 +11,7 @@
     scroll-behavior: smooth;
 }
 
+/* --------------------------------- GLOBAL VARIABLES for colors ------------------------------------ */
 :root {
     --my_dark: #45303c;
     --my_darkbrown: #5e4d53;
@@ -26,6 +27,7 @@ body {
     padding-left: 15rem;
 }
 
+/* definition of styles for 'h' elements */
 h1 {
     margin-top: 0;
     font-family: 'Oswald', sans-serif;
@@ -49,7 +51,8 @@ h2 {
     background-color: var(--my_dark);
     width: 15rem;
     height: 100%;
-    
+
+    /* layout of the navigation bar */
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -57,26 +60,31 @@ h2 {
     justify-content: center;
     font-size: 1rem;
 
-    /* anchor navigation to the left side */
+    /* anchor navigation bar to the left side */
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;  
 }
 
+/* style for the navigation bar's profile picture */
 .container .nav_bar .image_box {
     position: relative;
     width: 8rem;
     height: 8rem;
+    /* round box for the profile picture */
     border-radius: 50%;
     overflow: hidden;
     border: 0.4rem solid rgba(255, 255, 255, 0.2);
 }
 
+/* animation on hover over the profile picture */
 .container .nav_bar .image_box:hover {
     border: 0.6rem solid var(--my_pink);
     transition: all 0.5s ease-in-out;
 }
+
+/* style for the profile picture inside the round box */
 .container .nav_bar .image_box img {
     position: absolute;
     top: 0;
@@ -86,6 +94,7 @@ h2 {
     object-fit: cover;
 }
 
+/* layout of the navigation bar's items list */
 .container .nav_bar ul {
     display: flex;
     flex-direction: column;
@@ -95,11 +104,13 @@ h2 {
     align-items: center;
 }
 
+/* space between bar's items */
 .container .nav_bar ul li {
     margin-bottom: 1rem;
     display: list-item;
 }
 
+/* format style of the bar's items */
 .container .nav_bar ul li a {
     color: white;
     text-decoration: none;
@@ -108,25 +119,25 @@ h2 {
     text-transform: uppercase;
 }
 
+/* animation on hover over the bar's items */
 .container .nav_bar ul li a:hover {
     color: var(--my_pink);
 }
-
 .container .nav_bar .nav_list .nav_item:hover {
     color: var(--my_pink);
     transform: scale(1.1);
     transition: all 0.5s ease-in-out;
 }
 
-/* Hide elements meant to be displayed only on mobile screens. */
+/* Hide elements that are meant to be displayed only in mobile device view. */
 .mobile_name {
     display: none;
 }
-
 .mobile_lines {
     display: none;
 }
 
+/* style for 'hamburger' icon */
 .bar {
     display: block;
     width: 25px;
@@ -138,8 +149,8 @@ h2 {
 }
 
 /* --------------------------------- RIGHT BAR ------------------------------------ */
-
-.container .right_bar {    
+/* Layout of the right bar */ 
+.container .right_bar {   
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -149,8 +160,9 @@ h2 {
     padding-top: 10rem;
 }
 
-/* --------------------------------- SEKCIE VSEOBECNE ------------------------------------ */
+/* --------------------------------- SECTIONS GENERALLY ------------------------------------ */
 
+/* Layout of the sections */
 .right_bar .section {
     width: 80%;
     text-align: justify;
@@ -158,6 +170,7 @@ h2 {
 
 /* --------------------------------- SEKCIA: O MNE ------------------------------------ */
 
+/* Layout of the section 'O mne' */
 .about_content {
     width: 100%;
     display: flex;
@@ -165,16 +178,19 @@ h2 {
     gap: 1rem;
 }
 
+/* delete underline from the big name used as hyperlink */
 .about_content a {
     text-decoration: none;
 }
 
+/* style of the big name */
 .name {
     font-size: 3.5rem;
     font-weight: 700;
     color: black;
 }
 
+/* style of the surname */
 .surname {
     text-transform: uppercase;
     font-size: 3.5rem;
@@ -184,6 +200,7 @@ h2 {
     color: var(--my_pink);
 }
 
+/* style of the subheading */
 .about_subheading {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
@@ -193,6 +210,7 @@ h2 {
     letter-spacing: 0.2rem;
 }
 
+/* style of the subheading's email */
 .about_subheading a {
     color: var(--my_lightbrown);
     text-decoration: underline;
@@ -200,6 +218,7 @@ h2 {
     letter-spacing: 0;
 }
 
+/* layout of the social media icons */
 .about_social {
     display: flex;
     flex-direction: row;
@@ -210,10 +229,12 @@ h2 {
     margin-top: 1rem;
 }
 
+/* animations on hover over the social media icons */
 .social_icon:hover {
     transform: scale(1.3);
     transition: all 0.5s ease-in-out;}
 
+/* style of the social media icon imported picture */
 .social_icon img {
     width: 2.5rem;
     height: 2.5rem;
@@ -223,6 +244,7 @@ h2 {
 
 /* --------------------------------- SEKCIA: VZDELANIE ------------------------------------ */
 
+/* Layout of the section 'Vzdelanie' */
 .education_content {
     margin-top: 3rem;
     width: 100%;
@@ -235,12 +257,14 @@ h2 {
 }
 
 .education_content .education_box {
+    /* layout of the education boxes */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
 
+    /* style of the education boxes */
     background-color: var(--my_transparent_pink);
     border-radius: 0.2rem;
     box-shadow: 2px 0 10px var(--my_pink);
@@ -249,10 +273,13 @@ h2 {
     padding: 20px;
 }
 
+/* animation on hover over the education boxes */
 .education_content .education_box:hover {
     transform: scale(1.1);
     transition: all 0.2s ease-in-out;
 }
+
+/* sryle of the education boxes' icon */
 .education_content .education_box .edu_icon {
     width: 7rem;
     height: 7rem;
@@ -265,6 +292,7 @@ h2 {
     margin-top: 2rem;
 }
 
+/* style of the education duration */
 .education_content .education_box .education_year {
     font-size: 1.2rem;
     font-weight: 600;
@@ -272,7 +300,9 @@ h2 {
     color: var(--my_lightbrown);
 }
 
+
 .education_content .education_box .education_text {
+    /* layout of the education text */
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
@@ -282,16 +312,19 @@ h2 {
     font-size: 0.8rem;
 }
 
+/* style of the school's name */
 .education_content .education_box .education_text .school_title {
     font-weight: 600;
     font-size: 1rem;
 }
 
 /* --------------------------------- SEKCIA: ZNALOSTI ------------------------------------ */
+
 .skills_content {
     min-width: 150px;
 }
 
+/* Layout of the section 'Znalosti' */
 .skills_content .box {
     position: relative;
     width: 100%;
@@ -302,6 +335,7 @@ h2 {
     margin-top: 2rem;
 }
 
+/* style of the skills percent graph - background */
 .skills_content .box .percent {
     position: relative;
     width: 100%;
@@ -309,6 +343,7 @@ h2 {
     background-color: #ebe8e8;
 }
 
+/* style of the skills percent graph - foreground */
 .skills_content .box .percent div {
     position: absolute;
     top: 0;
@@ -317,12 +352,14 @@ h2 {
     background-color: var(--my_pink);
 }
 
+/* animation on hover over the skills percent graph */
 .skills_content .box .percent div:hover {
     background-color: var(--my_darkpink);
     transform: scale(1.1);
     transition: all 0.2s ease-in-out;
 }
 /* --------------------------------- SEKCIA: PROJEKTY ------------------------------------ */
+/* layout of the section 'Projekty' */
 .projects_content {
     width: 100%;
     display: flex;
@@ -333,6 +370,7 @@ h2 {
     margin-top: 2rem;
 }
 
+/* layout of the project boxes */
 .projects_content .project_box {
     width: 100%;
     display: flex;
@@ -342,6 +380,7 @@ h2 {
     align-items: center;
 }
 
+/* style of the project titles */
 .projects_content .project_box .project_title {
     text-decoration: none;
     font-size: 1.5rem;
@@ -350,12 +389,14 @@ h2 {
     color: var(--my_lightbrown);
 }
 
+/* animation on hover over the project titles */
 .projects_content .project_box .project_title:hover {
     color: var(--my_pink);
     transform: scale(1.1);
         transition: all 0.5s ease-in-out;
 }
 
+/* layout of the project text */
 .projects_content .project_box .project_text {
     font-size: 0.9rem;
     text-align: center;
@@ -367,13 +408,17 @@ h2 {
 
 }
 
+/* delete underline of the project hyperlink */
 .projects_content .project_box .project_text a {
     text-decoration: none;
 }
+
+/* change size of the project image */
 .projects_content .project_box .project_img {
     width: 21rem;
 }
 
+/* animation on hover over the project image */
 .projects_content .project_box .project_img:hover {
     transform: scale(1.1);
     transition: all 0.5s ease-in-out;
@@ -390,7 +435,6 @@ footer {
 }
 
 /* --------------------------------- MOBILE VIEW ------------------------------------ */
-
 @media (max-width: 768px) {
 
     /* font sizes */
@@ -407,28 +451,36 @@ footer {
         overflow: scroll;
     }
 
+    /* body padding */
     body {
         padding-left: 0;
     }
+
+    /* anchor navigation bar to the top */
     .container .nav_bar {
         position: fixed;
         width: 100%;
         height: 4rem;
 
+        /* display elements of navigation bar evenly */
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
+
+    /* hide the profile picture in the navigation bar */
     .container .nav_bar .image_box {
         display: none;
     }
 
+    
     .container .nav_bar .nav_list {
         position: fixed;
-        right: -100%;
+        right: -100%; /* hide the navigation bar list of sections outside of the page */
         top: 4rem;
         padding-top: 1rem;
 
+        /* display elements of navigation list evenly */
         display: flex;
         flex-direction: column;
         background-color: white;
@@ -439,21 +491,26 @@ footer {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
 
+    /* show the navigation bar list of sections when the navigation bar is active according to the javascript */
     .container .nav_bar .nav_list.active {
         right: 0;
     }
 
+    /* show name in the top left corner of the navigation bar */
     .container .nav_bar .mobile_name {
         display: block;
         margin: 15px 0 0 20px;
         font-size: 1.3rem;
         font-weight: 600;
         color: white;
+    }  
+    
+    /* delete hyperlink underline from the name hyperlink */
+    .container .nav_bar a {
+        text-decoration: none;
     }
 
-                                                                                                                                                                                                                                                                .container .nav_bar a {
-                                                                                                                                                                                                                                                                    text-decoration: none;
-                                                                                                                                                                                                                                                                }
+    /* show the hamburger menu icon in the top right corner of the navigation bar */
     .container .nav_bar .mobile_lines {
         display: block;
         float: right;
@@ -462,15 +519,18 @@ footer {
         margin-right: 20px;
     }
 
+    /* set color of navigation list items to black */
     .container .nav_bar .nav_list .nav_item a {
         color: black;
     }
 
+    /* make the padding and gaps between sections smaller */
     .container .right_bar {
         padding-top: 10rem;
         gap: 10rem;
     }
 
+    /* change size of the project images - smaller */
     .projects_content .project_box .project_img {
         width: 15rem;
     }
