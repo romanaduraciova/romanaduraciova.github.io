@@ -419,6 +419,10 @@ footer {
         color: white;
     }
 
+    .container .nav_bar a {
+        text-decoration: none;
+    }
+
     .container .nav_bar .mobile_lines {
         display: block;
         float: right;
