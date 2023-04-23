@@ -1,0 +1,188 @@
+<!-- 
+    Autor: Romana Ďuráčiová | xdurac01
+    Projekt: ITW Projekt č. 2
+-->
+<html lang="sk">
+<head>
+    <title>Romana Ďuráčiová</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Oswald:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="nav_bar">
+            <div class="image_box">
+                <img src="img/user_picture.png" alt="romana">
+            </div>
+            <ul class="nav_list">
+                <li class="nav_item"><a href="#section_about">O mne</a></li>
+                <li class="nav_item"><a href="#section_education">Vzdelanie</a></li>
+                <li class="nav_item"><a href="#section_skills">Znalosti</a></li>
+                <li class="nav_item"><a href="#section_projects">Projekty</a></li>
+            </ul>
+            <div class="mobile_name">Romana Ďuráčiová</div>
+            <div class="mobile_lines">
+                <!-- Spans that will create three horizontal lines. -->
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <div class="right_bar">
+            <section class="section" id="section_about">
+                <div class="about_content">
+                    <h1 class="name">Romana <span class="surname">Ďuráčiová</span></h1>
+                    <div class="about_subheading">
+                        Brno, Česká republika · 20 rokov · 
+                        <a href="mailto:duraciovar@gmail.com">duraciovar@gmail.com</a>
+                    </div>
+                    <p class="about_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec
+                        tincidunt
+                        lacinia, nunc
+                        elit ultrices nunc, vel tincidunt nisl lorem nec nunc. Sed euismod, nisl nec
+                        tincidunt
+                        lacinia, nunc
+                        elit ultrices nunc, vel tincidunt nisl lorem nec nunc. Sed euismod, nisl nec tincidunt
+                        lacinia, nunc elit ultrices nunc, vel tincidunt nisl lorem nec nunc. Sed euismod, nisl
+                        nec tincidunt lacinia, nunc elit ultrices nunc, vel tincidunt nisl lorem nec nunc.
+                    </p>
+                    <div class="about_social">
+                        <a class="social_icon" href="https://www.linkedin.com/" target="_blank">
+                            <img src="img/linkedin.png" alt="linkedin">
+                        </a>
+                        <a class="social_icon" href="https://github.com/romanaduraciova" target="_blank">
+                            <img src="img/github.png" alt="github">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section" id="section_education">
+                <h1>Vzdelanie</h1>
+                <div class="education_content">
+                    <div class="education_box">
+                        <img class="edu_icon" src="img/elementary.png" alt="linkedin">
+                        <div class="education_year">
+                            2008 - 2017
+                        </div>
+                        <div class="education_text">
+                            <h3 class="school_title">Základná škola s materskou školou</h3>
+                            <p class="place">Selec, Slovenská republika</p>
+                        </div>
+                    </div>
+                    <div class="education_box">
+                        <img class="edu_icon" src="img/high_school.png" alt="linkedin">
+                        <div class="education_year">
+                            2017 - 2021
+                        </div>
+                        <div class="education_text">
+                            <h3 class="school_title">Gymnázium Ľudovíta Štúra</h3>
+                            <p class="place">Trenčín, Slovenská republika</p>
+                        </div>
+                    </div>
+                    <div class="education_box">
+                        <img class="edu_icon" src="img/uni.png" alt="linkedin">
+                        <div class="education_year">
+                            2021 - sučasnosť
+                        </div>
+                        <div class="education_text">
+                            <h3 class="school_title">Fakulta informačních technologií, VUT</h3>
+                            <p class="place">Brno, Česká republika</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="section_skills">
+                <h1>Zručnosti</h1>
+                <div class="skills_content">
+                    <div class="box">
+                        <h2>Html</h2>
+                        <div class="percent">
+                            <div style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2>CSS</h2>
+                        <div class="percent">
+                            <div style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2>OOP</h2>
+                        <div class="percent">
+                            <div style="width: 45%;"></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2>Linux</h2>
+                        <div class="percent">
+                            <div style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2>Docker</h2>
+                        <div class="percent">
+                            <div style="width: 40%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="section_projects">
+                <h1>Projekty</h1>
+                <div class="projects_content">
+                    <div class="project_box">
+                        <a href="https://www.mestskyhostinec.sk/">
+                            <img class="project_img" id="hostinec_img" src="img/hostinec.png" alt="hostinec">
+                        </a>
+                        <div class="project_text">
+                            <a href="https://www.mestskyhostinec.sk/menu/burger/"><h3 class="project_title">Mestský Hostinec Trenčín</h3></a>
+                            <p class="project_desc">
+                                Jedným z mojich projektov je webová stránka pre reštauráciu Mestský Hostinec v Trenčíne. 
+                                Stránka obsahuje všeobecné informácie o podniku, kontakty no primárne ju pán majiteľ
+                                využíva ako online menu a každý deň na nej nájdete aktuálnu dennú ponuku. Stránka 
+                                bola vytvorená pomocou online editora Webnode s využítím prvkov HTML a čiastočne
+                                sa na jej aktualizácii podieľam dodnes. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project_box">
+                        <a href="https://www.raytex.sk/nase-produkty2/">
+                            <img class="project_img" id="raytex_img" src="img/raytex.png" alt="raytex">
+                        </a>
+                        <div class="project_text">
+                            <a href="https://www.raytex.sk/nase-produkty2/"><h3 class="project_title">Raytex</h3></a>
+                            <p class="project_desc">
+                                Mojím prvým projektom bola webová stránka pre spoločnosť Raytex. Stránka bola
+                                vytvorená počas pandémie COVID-19, aby spoločnosť mohla zabezpečiť svojim zákazníkom
+                                možnosť objednávania tovaru online. Vytvorená bola pomocou online editora Webnode
+                                s využitím prvkov HTML a časom prepadla pod správu pána majiteľa.
+                            </p>
+                        </div>
+                    </div> 
+                </div> <!-- projects_content -->
+            </section> <!-- section_projects -->
+        </div> <!-- right_bar -->
+
+        <footer>
+            <div class="footer_content">
+                <div class="footer_box">
+                    © 2023 | Designed by: Romana Ďuráčiová
+                </div>
+            </div>
+        </footer>
+
+    </div> <!-- container -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
